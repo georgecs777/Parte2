@@ -63,11 +63,13 @@ public class parte2{
             new Triangulo(3.0, 4.0)
         };
 
-        for (Figura figura : figuras) {
-            System.out.println("Area: " + figura.calcularArea());
+        for (int i = 0; i < figuras.length; i++) {
+            Figura f = figuras[i];
+            System.out.println("Área de la figura " + (i + 1) + ": " + f.calcularArea());
         }
 
         Dibujable circuloDibujable = new Circulo(5.0);
         circuloDibujable.dibujar();
     }
+
 }
